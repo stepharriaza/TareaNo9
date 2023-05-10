@@ -42,33 +42,37 @@
             // 
             this.lblCarnet.AutoSize = true;
             this.lblCarnet.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCarnet.Location = new System.Drawing.Point(75, 130);
+            this.lblCarnet.Location = new System.Drawing.Point(86, 173);
             this.lblCarnet.Name = "lblCarnet";
-            this.lblCarnet.Size = new System.Drawing.Size(64, 23);
+            this.lblCarnet.Size = new System.Drawing.Size(79, 28);
             this.lblCarnet.TabIndex = 0;
             this.lblCarnet.Text = "Carnet:";
             // 
             // txtbCarnet
             // 
-            this.txtbCarnet.Location = new System.Drawing.Point(140, 130);
+            this.txtbCarnet.Location = new System.Drawing.Point(165, 173);
+            this.txtbCarnet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbCarnet.Name = "txtbCarnet";
-            this.txtbCarnet.Size = new System.Drawing.Size(309, 23);
+            this.txtbCarnet.Size = new System.Drawing.Size(353, 27);
             this.txtbCarnet.TabIndex = 1;
+            this.txtbCarnet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbCarnet_KeyPress);
             // 
             // txtbNombre
             // 
-            this.txtbNombre.Location = new System.Drawing.Point(150, 73);
+            this.txtbNombre.Location = new System.Drawing.Point(179, 97);
+            this.txtbNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbNombre.Name = "txtbNombre";
-            this.txtbNombre.Size = new System.Drawing.Size(299, 23);
+            this.txtbNombre.Size = new System.Drawing.Size(341, 27);
             this.txtbNombre.TabIndex = 3;
+            this.txtbNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(75, 73);
+            this.lblNombre.Location = new System.Drawing.Point(86, 97);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(78, 23);
+            this.lblNombre.Size = new System.Drawing.Size(99, 28);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre: ";
             // 
@@ -77,22 +81,24 @@
             this.btnGuardar.BackColor = System.Drawing.Color.RosyBrown;
             this.btnGuardar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGuardar.Location = new System.Drawing.Point(409, 297);
+            this.btnGuardar.Location = new System.Drawing.Point(467, 396);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(78, 30);
+            this.btnGuardar.Size = new System.Drawing.Size(89, 40);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnGuardar_KeyPress);
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblError.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblError.Location = new System.Drawing.Point(75, 233);
+            this.lblError.Location = new System.Drawing.Point(86, 311);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(44, 18);
+            this.lblError.Size = new System.Drawing.Size(57, 24);
             this.lblError.TabIndex = 5;
             this.lblError.Text = "label1";
             this.lblError.Visible = false;
@@ -102,9 +108,9 @@
             this.lblErrorNombre.AutoSize = true;
             this.lblErrorNombre.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblErrorNombre.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblErrorNombre.Location = new System.Drawing.Point(150, 99);
+            this.lblErrorNombre.Location = new System.Drawing.Point(171, 132);
             this.lblErrorNombre.Name = "lblErrorNombre";
-            this.lblErrorNombre.Size = new System.Drawing.Size(39, 17);
+            this.lblErrorNombre.Size = new System.Drawing.Size(49, 20);
             this.lblErrorNombre.TabIndex = 6;
             this.lblErrorNombre.Text = "label1";
             this.lblErrorNombre.Visible = false;
@@ -114,19 +120,19 @@
             this.lblErrorCarnet.AutoSize = true;
             this.lblErrorCarnet.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblErrorCarnet.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblErrorCarnet.Location = new System.Drawing.Point(140, 156);
+            this.lblErrorCarnet.Location = new System.Drawing.Point(160, 208);
             this.lblErrorCarnet.Name = "lblErrorCarnet";
-            this.lblErrorCarnet.Size = new System.Drawing.Size(39, 17);
+            this.lblErrorCarnet.Size = new System.Drawing.Size(49, 20);
             this.lblErrorCarnet.TabIndex = 7;
             this.lblErrorCarnet.Text = "label1";
             this.lblErrorCarnet.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(541, 371);
+            this.ClientSize = new System.Drawing.Size(618, 495);
             this.Controls.Add(this.lblErrorCarnet);
             this.Controls.Add(this.lblErrorNombre);
             this.Controls.Add(this.lblError);
@@ -135,6 +141,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtbCarnet);
             this.Controls.Add(this.lblCarnet);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Aplicacion de Estudiantes";
             this.ResumeLayout(false);
