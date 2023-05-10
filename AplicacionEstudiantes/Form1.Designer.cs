@@ -140,7 +140,10 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtbCarnet);
             this.Controls.Add(this.lblCarnet);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Aplicacion de Estudiantes";
             this.ResumeLayout(false);
