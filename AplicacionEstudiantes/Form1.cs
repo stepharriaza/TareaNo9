@@ -50,14 +50,6 @@ namespace AplicacionEstudiantes
             }
         }
 
-        private void btnGuardar_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                MessageBox.Show("Hola");
-            }
-        }
-
         private void txtbNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
