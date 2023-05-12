@@ -205,5 +205,18 @@ namespace AplicacionEstudiantes
 
             MessageBox.Show(message);
         }
+
+        private void mnuSalir_Click(object sender, EventArgs e)
+        {
+            String message = "¿Esta seguro que desea salir";
+            String title = "Cerrar aplacacion";
+
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult res = MessageBox.Show(message, title, buttons);
+            if (res == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

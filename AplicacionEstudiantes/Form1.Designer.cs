@@ -39,6 +39,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuEstudiantes = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNotas = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.btnListado = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -131,7 +132,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuEstudiantes});
+            this.mnuEstudiantes,
+            this.mnuSalir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(541, 24);
@@ -152,6 +154,13 @@
             this.mnuNotas.Size = new System.Drawing.Size(105, 22);
             this.mnuNotas.Text = "Notas";
             this.mnuNotas.Click += new System.EventHandler(this.mnuNotas_Click);
+            // 
+            // mnuSalir
+            // 
+            this.mnuSalir.Name = "mnuSalir";
+            this.mnuSalir.Size = new System.Drawing.Size(41, 20);
+            this.mnuSalir.Text = "Salir";
+            this.mnuSalir.Click += new System.EventHandler(this.mnuSalir_Click);
             // 
             // btnListado
             // 
@@ -209,5 +218,6 @@
         private ToolStripMenuItem mnuEstudiantes;
         private ToolStripMenuItem mnuNotas;
         private Button btnListado;
+        private ToolStripMenuItem mnuSalir;
     }
 }
